@@ -1,12 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   typescript: {
-    // Esto evita que la subida falle por errores de tipos
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Esto evita que falle por avisos de estilo de código
     ignoreDuringBuilds: true,
   },
 };
